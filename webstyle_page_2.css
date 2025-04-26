@@ -1,0 +1,80 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #19123b;
+    position: relative;
+}
+
+h1 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center; /* Tambahin ini biar h1 ketengah */
+}
+
+p {
+    font-size: medium;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center; /* Tambahin ini biar p ketengah */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.qr-code img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.chara-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    bottom: 20px;
+}
+.character-container {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;  /* Ini buat posisi di pojok kanan */
+    width: 200px;
+    height: auto;
+}
+.character {
+    width: 200px;
+    height: auto;
+}
+/* Animasi Shake buat Itoshi Rin */
+.chara-container {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.character-container {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
